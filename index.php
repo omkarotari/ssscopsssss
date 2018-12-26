@@ -47,7 +47,7 @@
                             </div><!-- .entry-content -->
 
                             <footer class="entry-footer read-more">
-                                <a href="#">read more</a>
+                                <a href="about.php">read more</a>
                             </footer><!-- .entry-footer -->
                         </div><!-- .hero-content-wrap -->
                     </div><!-- .col -->
@@ -456,10 +456,5 @@
         <!--</div><!-- .footer-bar -->
     </footer><!-- .site-footer -->
 
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type='text/javascript' src='js/swiper.min.js'></script>
-<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-<script type='text/javascript' src='js/custom.js'></script>
 </body>
 </html>

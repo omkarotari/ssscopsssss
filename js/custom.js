@@ -48,6 +48,10 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  4000);
 
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});
+
 })(jQuery);
 
 

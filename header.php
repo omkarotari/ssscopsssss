@@ -55,10 +55,6 @@
                                     <span></span>
                                     <span></span>
                                 </div><!-- .hamburger-menu -->
-
-                                <div class="header-bar-cart">
-                                    <a href="#" class="flex justify-content-center align-items-center"><span aria-hidden="true" class="icon_bag_alt"></span></a>
-                                </div><!-- .header-bar-search -->
                             </nav><!-- .site-navigation -->
                         </div><!-- .col -->
                     </div><!-- .row -->
