@@ -184,6 +184,7 @@
             </div><!-- div -->
         </div><!-- .row -->
 		<p  class="text-center">100 days training in wholesale/retail drug store.</p>
+		<p class="text-center"><h3><a href="careerOptions.php">Click here to know about Career options after D. Pharmacy </a></h3></p>
     </div><!-- .container -->
 
    <!--  <div class="container">
@@ -260,12 +261,6 @@
         <?php  include_once('footer.php'); ?>
 		
 	</footer>
-
-    <script type='text/javascript' src='js/jquery.js'></script>
-    <script type='text/javascript' src='js/swiper.min.js'></script>
-    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='js/custom.js'></script>
 
 </body>
 </html>

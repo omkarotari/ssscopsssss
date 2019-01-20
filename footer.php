@@ -21,7 +21,7 @@ All rights reserved | This template is made with <i class="fa fa-heart-o" aria-h
                             <ul>
                                 <li>Email: 	pharmacycollegesawarde@yahoo.in</li>
                                 <li>Phone: (02355) 264106</li>
-                                <li>Address: Vahal Phata,At post:-Sawarde,Chiplun,Ratnagiri.415606</li>
+                                <li><address>Address: Vahal Phata,At post:-Sawarde,Chiplun,Ratnagiri.415606</address></li>
                             </ul>
                         </div><!-- .foot-contact -->
                     </div><!-- .col -->
@@ -33,7 +33,7 @@ All rights reserved | This template is made with <i class="fa fa-heart-o" aria-h
                             <ul class="w-50">
                                 <li><a href="about.php">About </a></li>
                                 <li><a href="course.php">Course</a></li>
-                                <li><a href="imagegalley.php">Photo Gallery </a></li>
+                                <li><a href="imageGallery.php">Photo Gallery </a></li>
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div><!-- .quick-links -->
@@ -55,10 +55,11 @@ All rights reserved | This template is made with <i class="fa fa-heart-o" aria-h
             </div><!-- .container -->
         </div><!-- .footer-widgets -->
 		
-		
+
 <script type='text/javascript' src='js/jquery.js'></script>
 <script type='text/javascript' src='js/swiper.min.js'></script>
 <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
 <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
 <script type='text/javascript' src='js/custom.js'></script>
-<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'>
+</script><script type='text/javascript' src='js/ninja-slider.js'></script>

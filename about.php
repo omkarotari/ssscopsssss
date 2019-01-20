@@ -51,7 +51,7 @@
                 <div class="breadcrumbs">
                     <ul class="flex flex-wrap align-items-center p-0 m-0">
                         <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-                        <li>About</li>
+                        <li>About College</li>
                     </ul>
                 </div><!-- .breadcrumbs -->
             </div><!-- .col -->
@@ -85,6 +85,20 @@
                 </div><!-- .about-values -->
             </div><!-- .col -->
         </div><!-- .row -->
+		<br/><br/>
+		<div class="col-12">
+			<div class="row">
+				<div class="col-4">
+					<button type="button" class="btn btn-link"><a href ="https://drive.google.com/open?id=0B7hSMSKKLANlbm5nYVlpbnVxSkU" target="_blank">Click here for Mandatory Disclosure</a></button>
+				</div>
+				<div class="col-4">
+					<button type="button" class="btn btn-link"><a href="https://drive.google.com/file/d/0B7hSMSKKLANlbm5nYVlpbnVxSkU/view?usp=sharing" target="_blank">Click here for SIF/2019</a></button>
+				</div>
+				<div class="col-4">
+					<button type="button" class="btn btn-link"><a href="https://drive.google.com/file/d/0B7hSMSKKLANlRW5ienZPaWFLcWc/view?usp=sharing" target="_blank">Click here for Governing Body</a></button>
+				</div>
+			</div>
+		</div>
     </div><!-- .container -->
 	<section class="about-section">
         <div class="container">
@@ -175,11 +189,6 @@
 		
 	</footer>
 
-    <script type='text/javascript' src='js/jquery.js'></script>
-    <script type='text/javascript' src='js/swiper.min.js'></script>
-    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='js/custom.js'></script>
 
 </body>
 </html>

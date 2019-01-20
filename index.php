@@ -181,10 +181,10 @@
 								<img src="images/college/College_Buliding.jpg">
 							</div>
 							<div>
-								<img src="images/college/Pharmacists_Day_02.jpg">
+								<img src="images/college/pharmDay03.jpg">
 							</div>
 							<div>
-								<img src="images/college/IV_01.jpg">
+								<img src="images/college/IV01.jpg">
 							</div>
 						</div>
                     </div><!-- .ezuca-video -->
@@ -225,9 +225,9 @@
 
 							<h2 class="entry-title" ><a href="#"><font color="#ff9933">Principal's Desk</font></a></h2>
 									<p> Dear Students,
-							In 1984,the face of quality education smiled in Konkan region. The Sahyadri Shikshan Sanstha’s COLLEGE OF PHARMACY(POLY),Sawarde was established in...<br/> <span class='read-more'><a href="#">Read More...<i class="fa fa-long-arrow-right"></i></a></span> </p>
+							In 1984,the face of quality education smiled in Konkan region. The Sahyadri Shikshan Sanstha's COLLEGE OF PHARMACY(POLY),Sawarde was established in...<br/> <span class='read-more'><a href="principaldesk">Read More...<i class="fa fa-long-arrow-right"></i></a></span> </p>
                                 <div class="entry-meta flex flex-wrap align-items-center">
-                                    <div class="course-author"><a href="#">Mr. Sanjay Gulabrao Desai </a></div>
+                                    <div class="course-author">Mr. Sanjay Gulabrao Desai </div>
 
 								<!--<div class="course-date">July 21, 2018</div> -->
                                 </div><!-- .course-date -->
@@ -261,7 +261,7 @@
                                 </div><!-- .course-ratings -->
 
                                 <h2 class="entry-title"><a href="#"><font color='ff9933'>About Sahyadri Shikshan Sanstha Sawarde</font></a></h2>
-								<p>Sahyadri Shikshan SANSTHA HAS been established with a noble aim of imparting higher education to the youth of KONKAN region and with a strong... <br/> <span class='read-more'><a href="#">Read More...<i class="fa fa-long-arrow-right"></i></a></span> </p>
+								<p>Sahyadri Shikshan SANSTHA HAS been established with a noble aim of imparting higher education to the youth of KONKAN region and with a strong... <br/> <span class='read-more'><a href="aboutsanstha.php">Read More...<i class="fa fa-long-arrow-right"></i></a></span> </p>
                                 <div class="entry-meta flex flex-wrap align-items-center">
                                     <div class="course-author"><a href="#"></a></div>
 

@@ -29,24 +29,32 @@
                     </div><!-- .row -->
                 </div><!-- .container-fluid -->
             </div><!-- .top-header-bar -->
-
+	<?php
+	$cur_page_arr = explode("/",$_SERVER['PHP_SELF']);
+	$cur_page = $cur_page_arr[count($cur_page_arr)-1]; 
+	
+	if($cur_page == 'index')
+	{ $index='current-menu-item';}
+	
+	?>
             <div class="nav-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-9 col-lg-3">
+                        <div class="col-8 col-lg-3">
                             <div class="site-branding">
-                                <h1 class="site-title"><a href="index.html" rel="home">SSS<span>COPS</span></a></h1>
+                                <h1 class="site-title"><a href="index.php" rel="home">SSS<span>COPS</span></a></h1>
                             </div><!-- .site-branding -->
                         </div><!-- .col -->
 
                         <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
                             <nav class="site-navigation flex justify-content-end align-items-center">
                                 <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                    <li class="current-menu-item"><a href="index.php">Home</a></li>
-                                    <li><a href="about.php">About</a></li>
-                                    <li><a href="aboutsanstha.php">About Sanstha</a></li>
-                                    <li><a href="course.php">Course Profile</a></li>
-                                    <li><a href="contact.php">Contact</a></li>
+                                    <li class=<?php if($cur_page =='index.php'){ echo 'current-menu-item';} ; ?>><a href="index.php">Home</a></li>
+                                    <li class=<?php if($cur_page =='about.php'){ echo 'current-menu-item';} ?>><a href="about.php">About College</a></li>
+                                    <li class=<?php if($cur_page =='aboutsanstha.php'){ echo 'current-menu-item';} ?> ><a href="aboutsanstha.php">About Sanstha</a></li>
+                                    <li class=<?php if($cur_page =='course.php'){ echo 'current-menu-item';} ?>><a href="course.php">Course Profile</a></li>
+									<li class=<?php if($cur_page =='imageGallery.php'){ echo 'current-menu-item';} ?>><a href="imageGallery.php">Image Gallery</a></li>
+                                    <li class=<?php if($cur_page =='contact.php'){ echo 'current-menu-item';} ?>><a href="contact.php">Contact</a></li>
                                 </ul>
 
                                 <div class="hamburger-menu d-lg-none">
