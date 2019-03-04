@@ -13,21 +13,22 @@ function SentMail($email,$firstName,$surName,$enquiry,$message)
 {
 $mail = new PHPMailer(); // create a new object
 $mail->IsSMTP(); // enable SMTP
-// $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
 $mail->SMTPAuth = true; // authentication enabled
 $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
-$mail->Host = "smtp.gmail.com";
+// $mail->Host = "smtp.gmail.com";
+$mail->Host = "smtp.mail.yahoo.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "insta.dev.omk@gmail.com";
-$mail->Password = "insta@omk";
+$mail->Username = "ssscops@yahoo.com";
+$mail->Password = "pharmacycollege";
 $mail->SetFrom("harry.otari@gmail.com");
 $mail->Subject = $enquiry;
-$mail->Body = 'Dear SSSCOPS<br/> '.$firstName.' '.$surName.' has sent enquiry message as - <br/>'.$message;
-$mail->AddAddress($email);
+$mail->Body = 'Dear SSSCOPS<br/> '.$firstName.' '.$surName.' with email id '.$email.' has sent enquiry message as - <br/>'.$message;
+$mail->AddAddress('harry.otari@gmail.com');
 
  if(!$mail->Send()) {
-    // echo "Mailer Error: " . $mail->ErrorInfo;
+    echo "Mailer Error: " . $mail->ErrorInfo;
 	return 0;
  } else {
 	 return 1;
@@ -38,10 +39,10 @@ $mail->AddAddress($email);
 if(SentMail($email,$firstName,$surName,$enquiry,$message))
 	
 	{
-			echo '<script> alert("Thank You for enquiry. Our staff will contact you soon.") ; window.location = "http://ssscops.in/newDesign/";</script>';
+			// echo '<script> alert("Thank You for enquiry. Our staff will contact you soon.") ; window.location = "http://ssscops.in/newDesign/";</script>';
 	}
 	else{
-		echo '<script> alert("Thank You for enquiry. Something went wrong, please add another enquiry.") ; window.location = "http://ssscops.in/newDesign/contact.php";</script>';
+		// echo '<script> alert("Thank You for enquiry. Something went wrong, please add another enquiry.") ; window.location = "http://ssscops.in/newDesign/contact.php";</script>';
 	}
 
 

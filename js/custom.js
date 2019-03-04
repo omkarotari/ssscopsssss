@@ -65,6 +65,37 @@ setInterval(function() {
                 ninjaSldr.parentNode.style.display = "none";
             }
         }
+
+$('document').ready(function()
+{
+	$("#btnSubmit").click(function(){
+		$.ajax({
+		type : 'POST',
+		url  : 'getData.php',
+		dataType: 'json',
+		data: '',
+		cache: false,
+		success :  function(result)
+			{
+				//pass data to datatable
+				console.log(result); // just to see I'm getting the correct data.
+				$('#alumniTable').DataTable({
+					"searching": false, //this is disabled because I have a custom search.
+					"aaData": [result], //here we get the array data from the ajax call.
+					"aoColumns": [
+						{ "sTitle": "ID" },
+						{ "sTitle": "Name" },
+						{ "sTitle": "Surame" },
+						{ "sTitle": "Email" }
+					],
+					buttons: [
+							'pdf','csv','excel'
+					]
+				});
+			}
+		});
+	});
+});
 })(jQuery);
 
 

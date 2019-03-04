@@ -366,65 +366,65 @@
 
     
 
-    <section class="home-gallery">
+  <!--   <section class="home-gallery">
         <div class="gallery-wrap flex flex-wrap">
             <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/college/a.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid1x1">
+        <!--     <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/h11.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid2x2">
+      <!--       <div class="gallery-grid gallery-grid2x2">
                 <a href="#"><img src="images/college/b.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid1x1">
+       <!--      <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/h33.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid1x1">
+       <!--      <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/college/e.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid2x1">
+         <!--    <div class="gallery-grid gallery-grid2x1">
                 <a href="#"><img src="images/college/h1.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid2x1">
+         <!--    <div class="gallery-grid gallery-grid2x1">
                 <a href="#"><img src="images/college/h.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid1x1">
+        <!--     <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/college/j.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid2x2 ">
+         <!--    <div class="gallery-grid gallery-grid2x2 ">
                 <a href="#"><img src="images/college/j1.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid1x1">
+         <!--    <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/h55.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid1x1">
+           <!--  <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/college/l.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid2x1">
+          <!--   <div class="gallery-grid gallery-grid2x1">
                 <a href="#"><img src="images/college/m.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid3x1">
+          <!--   <div class="gallery-grid gallery-grid3x1">
                 <a href="#"><img src="images/h22.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
 
-            <div class="gallery-grid gallery-grid1x1">
+         <!--    <div class="gallery-grid gallery-grid1x1">
                 <a href="#"><img src="images/college/o.jpg" alt=""></a>
             </div><!-- .gallery-grid -->
-        </div><!-- .gallery-wrap -->
-    </section><!-- .home-gallery --> 
+       <!--  </div><!-- .gallery-wrap -->
+   <!--  </section><!-- .home-gallery --> 
 
     
 

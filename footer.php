@@ -60,6 +60,7 @@ All rights reserved | This template is made with <i class="fa fa-heart-o" aria-h
 <script type='text/javascript' src='js/swiper.min.js'></script>
 <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
 <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/dataTables.min.js'></script>
 <script type='text/javascript' src='js/custom.js'></script>
 <script type='text/javascript' src='bootstrap/js/bootstrap.min.js'>
 </script><script type='text/javascript' src='js/ninja-slider.js'></script>
