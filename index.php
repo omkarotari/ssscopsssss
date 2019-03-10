@@ -178,13 +178,13 @@
 								<img src="images/college/College_Logo.jpg" alt="">
 							</div>-->
 							<div>
-								<img src="images/college/College_Buliding.jpg">
+								<img src="images/college/College_Buliding.JPG">
 							</div>
 							<div>
 								<img src="images/college/pharmDay03.jpg">
 							</div>
 							<div>
-								<img src="images/college/IV01.jpg">
+								<img src="images/college/IV01.JPG">
 							</div>
 						</div>
                     </div><!-- .ezuca-video -->

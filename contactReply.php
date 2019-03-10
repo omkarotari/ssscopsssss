@@ -16,16 +16,16 @@ $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
 $mail->SMTPAuth = true; // authentication enabled
 $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
-// $mail->Host = "smtp.gmail.com";
-$mail->Host = "smtp.mail.yahoo.com";
+$mail->Host = "smtp.gmail.com";
+// $mail->Host = "smtp.mail.yahoo.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "ssscops@yahoo.com";
-$mail->Password = "pharmacycollege";
-$mail->SetFrom("harry.otari@gmail.com");
+$mail->Username = "harry.otari@gmail.com";
+$mail->Password = "2548639ha2548639";
+$mail->SetFrom("pharmacycollegesawarde@yahoo.in");
 $mail->Subject = $enquiry;
 $mail->Body = 'Dear SSSCOPS<br/> '.$firstName.' '.$surName.' with email id '.$email.' has sent enquiry message as - <br/>'.$message;
-$mail->AddAddress('harry.otari@gmail.com');
+$mail->AddAddress('pharmacycollegesawarde@yahoo.in');
 
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
