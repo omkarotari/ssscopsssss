@@ -85,7 +85,7 @@
 				   
 				   </div>
 				   <div id="test_tables">
-						<table id="alumniTable" class="display">
+						<!--<table id="alumniTable" class="display">
 							<thead>
 								<tr>
 									<th>id</th>
@@ -96,7 +96,7 @@
 							</thead>
 							<tbody>
 							</tbody>
-						</table>
+						</table> -->
 				   </div>
 
                 </div><!-- .about-values -->
@@ -185,6 +185,9 @@
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
 	<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script> -->
-	
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.4.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.4.1/js/buttons.flash.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.4.1/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.4.1/js/buttons.print.min.js"></script>
 </body>
 </html>
