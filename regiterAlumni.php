@@ -13,8 +13,8 @@ $mail->Host = "smtp.gmail.com";
 // $mail->Host = "smtp.mail.yahoo.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "insta.dev.omk@gmail.com";
-$mail->Password = "insta@omk";
+$mail->Username = "ssscopss@gmail.com";
+$mail->Password = "sahyadri@123";
 $mail->SetFrom("harry.otari@gmail.com");
 $mail->Subject = "Welcome to SSSCOPS alumni portal!!!";
 $mail->Body = '<p>Dear  <h3 style="color: #6080c5;">'.$firstName.' '.$surName.'</h3> </p><br/>
@@ -54,18 +54,18 @@ function storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus
 		if ($result->num_rows > 0) {
 			$row = $result->fetch_assoc();
 			// print_r($row);
-			echo '<script> alert("Thank You for registering to SSSCOPS alumni,but provided details already exists, please provide new details to register. ") ; window.location = "http://ssscops.in/newDesign/alumni.php";</script>';
+			echo '<script> alert("Thank You for registering to SSSCOPS alumni,but provided details already exists, please provide new details to register. ") ; window.location = "http://ssscops.in/alumni.php";</script>';
 		}
 		else{
 				$sql = "INSERT INTO ssscops ( firstname, surname, email, batchyear, address, maritalstatus, profession, afterdiploma) VALUES ('".$firstName."', '".$surName."', '".$email."', '".$batchyear."', '".$address."', '".$maritalstatus."', '".$profession."', '".$afterdiploma."')";
 		
 			if ($conn->query($sql) === TRUE) {
-				echo '<script> alert("Thank You for registering to SSSCOPS alumni ,College will contact you for further alumni register process. ") ; window.location = "http://ssscops.in/newDesign/";</script>';
+				echo '<script> alert("Thank You for registering to SSSCOPS alumni ,College will contact you for further alumni register process. ") ; window.location = "http://ssscops.in/";</script>';
 				// echo "New record created successfully";
 				// $return = 0;
 				$aa = SentMail($email,$firstName,$surName);
 			} else {
-				echo '<script> alert("Thank You for registering to SSSCOPS alumnis,but system is facing issues, Please try after sometimes. ") ; window.location = "http://ssscops.in/newDesign/";</script>';
+				echo '<script> alert("Thank You for registering to SSSCOPS alumnis,but system is facing issues, Please try after sometimes. ") ; window.location = "http://ssscops.in/";</script>';
 				// echo "Error: " . $sql . "<br>" . $conn->error;
 				// $return = 1;	
 			}

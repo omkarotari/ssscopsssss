@@ -1,14 +1,14 @@
 <?php
 
-$columns = array( 
-// datatable column index  => database column name
-    0 => 'id',
-    1 => 'name',
-    2 => 'email',
-);
+// print_r($_POST);
+if($_POST['nam']!='gosavi' || $_POST['passwrd']!='gosavi'){
+	$dt = array("result"=>"inaccess");
+	echo json_encode($dt);
+}
+else{
 $servername = "localhost";
 	$username = "root";
-	$password = "";
+	$password = "sahyadri@123";
 	$dbname = "alumni";
 	
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -39,5 +39,5 @@ $arrayDataset = array();
 			));
 		} 
 echo json_encode($arrayDataset);
-
+}
 ?>

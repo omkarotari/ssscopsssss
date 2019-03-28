@@ -118,21 +118,29 @@ $('document').ready(function()
 }
 	var data;
 	$("#btnSubmit").click(function(){
+		var name = $('#usr').val();
+		var pwd = $('#pwd').val();
+		if(name=='' || pwd ==''){alert('enter the details');}
+		else{
 		$.ajax({
 		type : 'POST',
 		url  : 'getData.php',
 		dataType: 'json',
-		data: '',
+		data: {nam:name,passwrd:pwd},
 		cache: false,
 		success :  function(result)
 			{
 				//pass data to datatable
-				
-				console.log($.type(result)); // just to see I'm getting the correct data.
-				generate_table(result);
+				console.log(result)
+				if(result['result']=='inaccess'){alert('Enter correct details'); $('#log_table_container').remove();}
+				else{
+					console.log($.type(result)); // just to see I'm getting the correct data.
+					generate_table(result);
+				}
 			
 		}
 		});
+	}
 	});
 })
 })(jQuery);

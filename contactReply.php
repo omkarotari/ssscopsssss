@@ -20,8 +20,8 @@ $mail->Host = "smtp.gmail.com";
 // $mail->Host = "smtp.mail.yahoo.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "harry.otari@gmail.com";
-$mail->Password = "2548639ha2548639";
+$mail->Username = "ssscopss@gmail.com";
+$mail->Password = "sahyadri@123";
 $mail->SetFrom("pharmacycollegesawarde@yahoo.in");
 $mail->Subject = $enquiry;
 $mail->Body = 'Dear SSSCOPS<br/> '.$firstName.' '.$surName.' with email id '.$email.' has sent enquiry message as - <br/>'.$message;
