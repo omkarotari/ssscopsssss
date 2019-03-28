@@ -39,10 +39,10 @@ $mail->AddAddress('pharmacycollegesawarde@yahoo.in');
 if(SentMail($email,$firstName,$surName,$enquiry,$message))
 	
 	{
-			// echo '<script> alert("Thank You for enquiry. Our staff will contact you soon.") ; window.location = "http://ssscops.in/newDesign/";</script>';
+			echo '<script> alert("Thank You for enquiry. Our staff will contact you soon.") ; window.location = "http://ssscops.in/";</script>';
 	}
 	else{
-		// echo '<script> alert("Thank You for enquiry. Something went wrong, please add another enquiry.") ; window.location = "http://ssscops.in/newDesign/contact.php";</script>';
+		echo '<script> alert("Thank You for enquiry. Something went wrong, please add another enquiry.") ; window.location = "http://ssscops.in/contact.php";</script>';
 	}
 
 
