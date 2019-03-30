@@ -59,16 +59,16 @@
         <div class="row">
             <div class="col-12">
                 <div class="about-heading">
-                    <h2 class="entry-title">College of Pharmacy, Sawarde</h2>
+                    <h2 class="entry-title">Pharmacist Association of Sawarda Students (PASS) Registration</h2>
 
-                    <p>Education Pioneer In Konkan Region </p>
+                    <p>Aluminous Association of SSSCOPS</p>
                 </div><!-- .about-heading -->
             </div><!-- .col -->
 
             <div class="col-12 col-lg-12">
                 <div class="about-values">
                     <h3>Alumni Form</h3>
-<form id="contact-form" action="regiterAlumni.php" method="post"  role="form">
+<form id="contact-form" action="registerAlumni.php" method="post"  role="form">
 
     <div class="messages"></div>
 
@@ -91,19 +91,26 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label for="form_email">Email *</label>
                     <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email id *" required="required" data-error="Valid email id is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
-            <div class="col-md-6">
+			 <div class="col-md-4">
+                <div class="form-group">
+                    <label for="form_contact">Contact No *</label>
+                    <input id="form_contact" type="text" name="contact" pattern="[7-9]{1}[0-9]{9}" class="form-control" placeholder="Phone number with 7-9 and remaing 9 digit with 0-9 *" required="required" data-error="Please enter valid contact numer.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="form-group">
                     <label for="form_year">Batch Year *</label>
 					<select id="form_year" name="batchyear" class="form-control" required="required" data-error="Please specify your batch year.">
 					<option value="">Select year</option>
-					<?php for($i=1990; $i< date('Y'); $i++ ){ ?>
+					<?php for($i=1984; $i<= date('Y'); $i++ ){ ?>
                         <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
 					<?php } ?>
 					 </select>
@@ -112,22 +119,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label for="form_address">Address *</label>
-                    <textarea id="form_address" name="address" class="form-control" placeholder="Please specify your address" rows="4" required="required" data-error="Please specify your address."> </textarea>
+                    <textarea id="form_address" name="address" class="form-control" placeholder="Please specify your address" rows="3" required="required" data-error="Please specify your address."> </textarea>
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
-			<div class="col-md-6">
+			<div class="col-md-4">
                 <div class="form-group">
                     <label for="form_address">Marital Status</label>
 					<div class="form-check">
 						<label class="form-check-label">
 						<input type="radio" class="form-check-input" name="maritalstatus" value="single">Single
-						</label>
-					</div>
-					<div class="form-check">
+						</label>  &nbsp;&nbsp;&nbsp;
 						<label class="form-check-label">
 						<input type="radio" class="form-check-input" name="maritalstatus" value="married">Married
 						</label>
@@ -135,7 +140,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
-				<div class="col-md-6">
+				<div class="col-md-4">
                  <div class="form-group">
                     <label for="form_profession">Profession *</label>
                     <input id="form_profession" type="text" name="profession" class="form-control" placeholder="Please enter your profession *" required="required" data-error="Please mention your profession.">
@@ -146,6 +151,13 @@
                  <div class="form-group">
                     <label for="form_afterdiploma">What did you do after SSSCOPS ? *</label>
                     <input id="form_afterdiploma" type="text" name="afterdiploma" class="form-control" placeholder="What did you do after SSSCOPS? *" required="required" data-error="What did you do after SSSCOPS ?">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+			<div class="col-md-6">
+                 <div class="form-group">
+                    <label for="form_extraachivements">Extra Achivements </label>
+                    <input id="form_extraachivements" type="text" name="extraachivements" class="form-control" placeholder="Please mention your extra achivements, if any">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>

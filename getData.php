@@ -28,14 +28,15 @@ $arrayDataset = array();
 		  {
 			array_push($arrayDataset, array( 
 				"ID" =>$row_set[0],
-				"firstname" =>$row_set[1],
-				"surname" =>$row_set[2],
+				"Name" =>$row_set[1].' '.$row_set[2],
+				"Contact" => $row_set[9],
 				"email" =>$row_set[3],
 				"batchyear" =>$row_set[4],
 				"address" =>$row_set[5],
 				"marital_status" =>$row_set[6],
 				"profession" =>$row_set[7],
-				"after_ssscop" =>$row_set[8]
+				"after_ssscop" =>$row_set[8],
+				"achievements" => $row_set[10]
 			));
 		} 
 echo json_encode($arrayDataset);

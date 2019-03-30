@@ -72,37 +72,39 @@ $('document').ready(function()
 	function generate_table(data){
 	var blank_row;
 	$('#log_table_container').remove();
-	$('#test_tables').append("<div class='container' id='log_table_container'><div class='table-responsive'><table id='log_table' class='display' cellspacing='0' width='100%' style='float:right;'> <thead><tr> <th data-field='ID'>ID</th>  <th data-field='firstname'>First Name</th><th data-field='surname'>Surname</th><th data-field='email_id'>Email ID</th><th data-field='batchyear'>Batch Year</th><th data-field='address'>Address</th><th data-field='marital_status'>Marital Status</th><th data-field='profession'>Profession</th><th data-field='afterssscop'>After SSSCOPS</th></thead><tbody id='log_table_body'></tbody></table></div></div>");
+	$('#test_tables').append("<div class='container' id='log_table_container'><div class='table-responsive'><table id='log_table' class='display' width='100%' style='float:right;'> <thead><tr> <th style='visibility:hidden;' data-field='ID'>ID</th>  <th data-field='name'>Name</th><th data-field='contact'>Contact</th><th data-field='email_id'>Email ID</th><th data-field='batchyear'>Batch Year</th><th data-field='address'>Address</th><th data-field='marital_status'>Marital Status</th><th data-field='profession'>Profession</th><th data-field='afterssscop'>After SSSCOPS</th><th data-field='achievements'>Achievements</th></thead><tbody id='log_table_body'></tbody></table></div></div>");
 	var table;
 	$("#log_table_container").show();
 	var newData = JSON.stringify(data)
 	var response = $.parseJSON(newData);
 	$.each(response, function(i, item) {
 		if(item.ID==null)item.ID='';
-		if(item.firstname==null)item.firstname='';
-		if(item.surname==null)item.surname='';
+		if(item.Name==null)item.Name='';
+		if(item.Contact==null)item.Contact='';
 		if(item.email==null)item.email='';
 		if(item.batchyear==null)item.batchyear='';
 		if(item.address==null)item.address='';
 		if(item.marital_status==null)item.marital_status='';
 		if(item.profession==null)item.profession='';
 		if(item.after_ssscop==null)item.after_ssscop='';
-		if(item.ID=='' && item.firstname=='' && item.surname=='' && item.email=='' && item.batchyear=='' && item.address=='' && item.marital_status=='' && item.after_ssscop=='' && item.profession=='')
+		if(item.achievements==null)item.achievements=='';
+		if(item.ID=='' && item.Name=='' && item.Contact=='' && item.email=='' && item.batchyear=='' && item.address=='' && item.marital_status=='' && item.after_ssscop=='' && item.profession=='' && item.achievements=='')
 		{blank_row=1; console.log('blank');}
 		if(blank_row==1){
 			 return true;
 		}
 		else{
         var $tr = $('<tr>').append(
-            $('<td width=15%>').text(item.ID),
-            $('<td>').text(item.firstname),
-            $('<td>').text(item.surname),
+            $('<td style="visibility:hidden;">').text(item.ID),
+            $('<td>').text(item.Name),
+            $('<td>').text(item.Contact),
 			$('<td>').text(item.email),
 			$('<td>').text(item.batchyear),
 			$('<td>').text(item.address),
 			$('<td>').text(item.marital_status),
 			$('<td>').text(item.profession),
-			$('<td>').text(item.after_ssscop)
+			$('<td>').text(item.after_ssscop),
+			$('<td>').text(item.achievements)
         ).appendTo('#log_table_body');
 	}
     });
