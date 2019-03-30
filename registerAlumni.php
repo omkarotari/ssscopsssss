@@ -2,11 +2,11 @@
 
 require_once('PHPMailer/PHPMailerAutoload.php');
 
-function SentMail($email,$firstName,$surName,$enquiry,$message)
+function SentMail($email,$firstName,$surName)
 {
 $mail = new PHPMailer(); // create a new object
 $mail->IsSMTP(); // enable SMTP
-$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+// $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
 $mail->SMTPAuth = true; // authentication enabled
 $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com";
@@ -15,13 +15,14 @@ $mail->Port = 465; // or 587
 $mail->IsHTML(true);
 $mail->Username = "ssscopss@gmail.com";
 $mail->Password = "sahyadri@123";
-$mail->SetFrom("harry.otari@gmail.com");
+$mail->SetFrom("ssscops");
 $mail->Subject = "Welcome to SSSCOPS alumni portal!!!";
 $mail->Body = '<p>Dear  <h3 style="color: #6080c5;">'.$firstName.' '.$surName.'</h3> </p><br/>
 <p style="color: ;"> Thank you for registering to SSSCOPS alumni poratl.<br/></p>
 <p style="color: ;"> College will contact you for further register processing. </p>';
 // $mail->AddAddress('harry.otari@gmail.com');
-$mail->addAddress($email, $fullname);
+$fullName = $firstName.' '.$surName;
+$mail->addAddress($email, $firstName);
 
  if(!$mail->Send()) {
     // echo "Mailer Error: " . $mail->ErrorInfo;
@@ -33,11 +34,11 @@ $mail->addAddress($email, $fullname);
 }
 
 
-function storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus,$profession,$afterdiploma)
+function storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus,$profession,$afterdiploma,$contact,$achievements)
   {
 	$servername = "localhost";
 	$username = "root";
-	$password = "";
+	$password = "sahyadri@123";
 	$dbname = "alumni";
 	
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -57,7 +58,7 @@ function storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus
 			echo '<script> alert("Thank You for registering to SSSCOPS alumni,but provided details already exists, please provide new details to register. ") ; window.location = "http://ssscops.in/alumni.php";</script>';
 		}
 		else{
-				$sql = "INSERT INTO ssscops ( firstname, surname, email, batchyear, address, maritalstatus, profession, afterdiploma) VALUES ('".$firstName."', '".$surName."', '".$email."', '".$batchyear."', '".$address."', '".$maritalstatus."', '".$profession."', '".$afterdiploma."')";
+				$sql = "INSERT INTO ssscops ( firstname, surname, email, batchyear, address, maritalstatus, profession, afterdiploma,contact,achivements) VALUES ('".$firstName."', '".$surName."', '".$email."', '".$batchyear."', '".$address."', '".$maritalstatus."', '".$profession."', '".$afterdiploma."','".$contact."','".$achievements."')";
 		
 			if ($conn->query($sql) === TRUE) {
 				echo '<script> alert("Thank You for registering to SSSCOPS alumni ,College will contact you for further alumni register process. ") ; window.location = "http://ssscops.in/";</script>';
@@ -73,6 +74,7 @@ function storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus
 		$conn->close();
 	}
 if(isset($_POST['submitButton'])){ 
+// print_r($_POST);
   $firstName = $_POST['name']; 
   $surName = $_POST['surname'];
   $email = $_POST['email'];
@@ -81,9 +83,11 @@ if(isset($_POST['submitButton'])){
   $maritalstatus = $_POST['maritalstatus'];
   $profession = $_POST['profession'];
   $afterdiploma = $_POST['afterdiploma'];
+  $contact =$_POST['contact'];
+  $achievements = $_POST['extraachivements'];
   
   //CREATE TABLE `alumni`.`ssscops` ( `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, `firstname` VARCHAR(50) NULL , `surname` VARCHAR(50) NULL , `email` VARCHAR(30) NULL , `batchyear` INT NULL , `address` VARCHAR(100) NULL , `maritalstatus` VARCHAR(10) NULL , `profession` VARCHAR(30) NULL , `afterdiploma` VARCHAR(30) NULL ) ENGINE = InnoDB;
-	$callFunction = storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus,$profession,$afterdiploma);
+	$callFunction = storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus,$profession,$afterdiploma,$contact,$achievements);
 	
  }
  

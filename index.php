@@ -178,7 +178,7 @@
 								<img src="images/college/College_Logo.jpg" alt="">
 							</div>-->
 							<div>
-								<img src="images/college/College_Buliding.JPG">
+								<img src="images/college/colg_new.jpg">
 							</div>
 							<div>
 								<img src="images/college/pharmDay03.jpg">
