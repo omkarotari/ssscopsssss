@@ -72,7 +72,7 @@
 					<b>Address</b> - Vahal Phata, At post - Sawarde, Chiplun, Ratnagiri 415606 <br>
 					<b>Telephone</b> - (02355)264106<br>
 					<b>Fax</b> - (02355)264163<br>
-					<b>Email id</b> - ssscopssawarde@yahoo.com
+					<b>Email id</b> - pharmacycollegesawarde@yahoo.in
                 </div><!-- .about-stories -->
             </div><!-- .col -->
 

@@ -35,6 +35,7 @@ All rights reserved | This template is made with <i class="fa fa-heart-o" aria-h
                                 <li><a href="course.php">Course</a></li>
                                 <li><a href="imageGallery.php">Photo Gallery </a></li>
                                 <li><a href="contact.php">Contact</a></li>
+								<li><a href="getAlumniRecords.php">For College</a></li>
                             </ul>
                         </div><!-- .quick-links -->
                     </div><!-- .col -->
