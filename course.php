@@ -160,7 +160,7 @@
                 <td>40</td>
               </tr>
               <tr>
-                <td> Pharmacogonocy</td>
+                <td> Pharmacology & Toxicology </td>
                 <td>20</td>
                 <td>80</td>
                 <td>40</td>
