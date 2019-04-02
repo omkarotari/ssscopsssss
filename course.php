@@ -183,7 +183,7 @@
                 </div><!-- .about-values -->
             </div><!-- div -->
         </div><!-- .row -->
-		<p  class="text-center">100 days training in wholesale/retail drug store.</p>
+		<p  class="text-center"> 500 hours of practical training in wholesale/retail drug store.</p>
 		<p class="text-center"><h3><a href="careerOptions.php">Click here to know about Career options after D. Pharmacy </a></h3></p>
     </div><!-- .container -->
 

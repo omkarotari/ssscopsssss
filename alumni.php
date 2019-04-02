@@ -107,7 +107,7 @@
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="form_year">Batch Year *</label>
+                    <label for="form_year">Passing Year *</label>
 					<select id="form_year" name="batchyear" class="form-control" required="required" data-error="Please specify your batch year.">
 					<option value="">Select year</option>
 					<?php for($i=1984; $i<= date('Y'); $i++ ){ ?>
@@ -128,14 +128,9 @@
             </div>
 			<div class="col-md-4">
                 <div class="form-group">
-                    <label for="form_address">Marital Status</label>
+                    <label for="form_address">Pharmacist Registration No</label>
 					<div class="form-check">
-						<label class="form-check-label">
-						<input type="radio" class="form-check-input" name="maritalstatus" value="single">Single
-						</label>  &nbsp;&nbsp;&nbsp;
-						<label class="form-check-label">
-						<input type="radio" class="form-check-input" name="maritalstatus" value="married">Married
-						</label>
+						<input id="form_pregistration" type="text" name="pregistrationno" class="form-control" placeholder="Please enter your Pharmicist registration number *" required="required" data-error="Please mention your Pharmicist registration number.">
 					</div>
                     <div class="help-block with-errors"></div>
                 </div>

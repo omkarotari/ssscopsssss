@@ -89,13 +89,13 @@
 		<div class="col-12">
 			<div class="row">
 				<div class="col-4">
-					<button type="button" class="btn btn-link"><a href ="https://drive.google.com/open?id=0B7hSMSKKLANlbm5nYVlpbnVxSkU" target="_blank">Click here for Mandatory Disclosure</a></button>
+					<button type="button" class="btn btn-link"><a href ="https://drive.google.com/file/d/0B7hSMSKKLANlVExYWGJ1c0d3WU5ZTjZSd2JRWHp4d3BrX2FZ/view?usp=sharing" target="_blank">Click here for Mandatory Disclosure</a></button>
 				</div>
 				<div class="col-4">
 					<button type="button" class="btn btn-link"><a href="https://drive.google.com/file/d/0B7hSMSKKLANlbm5nYVlpbnVxSkU/view?usp=sharing" target="_blank">Click here for SIF/2019</a></button>
 				</div>
 				<div class="col-4">
-					<button type="button" class="btn btn-link"><a href="https://drive.google.com/file/d/0B7hSMSKKLANlRW5ienZPaWFLcWc/view?usp=sharing" target="_blank">Click here for Governing Body</a></button>
+					<button type="button" class="btn btn-link"><a href="https://drive.google.com/file/d/0B7hSMSKKLANleXFQN3NIYjVoLVExMGtrMnhldkstMjRqMjdz/view?usp=sharing" target="_blank">Click here for Governing Body</a></button>
 				</div>
 			</div>
 		</div>

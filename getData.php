@@ -8,7 +8,7 @@ if($_POST['nam']!='gosavi' || $_POST['passwrd']!='gosavi'){
 else{
 $servername = "localhost";
 	$username = "root";
-	$password = "sahyadri@123";
+	$password = "";
 	$dbname = "alumni";
 	
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -33,7 +33,7 @@ $arrayDataset = array();
 				"email" =>$row_set[3],
 				"batchyear" =>$row_set[4],
 				"address" =>$row_set[5],
-				"marital_status" =>$row_set[6],
+				"pharmacist_registration_no" =>$row_set[6],
 				"profession" =>$row_set[7],
 				"after_ssscop" =>$row_set[8],
 				"achievements" => $row_set[10]

@@ -38,7 +38,7 @@ function storeData($firstName,$surName,$email,$batchyear,$address,$maritalstatus
   {
 	$servername = "localhost";
 	$username = "root";
-	$password = "sahyadri@123";
+	$password = "";
 	$dbname = "alumni";
 	
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -80,7 +80,7 @@ if(isset($_POST['submitButton'])){
   $email = $_POST['email'];
   $batchyear = $_POST['batchyear'];
   $address = $_POST['address'];
-  $maritalstatus = $_POST['maritalstatus'];
+  $maritalstatus = $_POST['pregistrationno'];
   $profession = $_POST['profession'];
   $afterdiploma = $_POST['afterdiploma'];
   $contact =$_POST['contact'];
